@@ -4,22 +4,27 @@ import ListItem from './hh'
 const userList = [
     {
         id : 1,
-        name : "My Dashboard"
+        name : "My Dashboard",
+        path : "/"
     }
 ,
     {
         id : 2,
-        name : "Projects"
+        name : "Projects",
+        path:"/projects"
+
     }
 ,
     {
         id : 3,
-        name : "My Tasks"
+        name : "My Tasks",
+        path:"/mytasks"
     }
 ,
     {
         id : 4,
-        name : "Pull Requests"
+        name : "Pull Requests",
+        path:"/pullrequests"
     }
 ]
 const Header = () => {

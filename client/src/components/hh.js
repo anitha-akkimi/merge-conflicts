@@ -1,4 +1,6 @@
 import {useState} from 'react'
+import {Link} from 'react-router-dom'
+
 
 const ListItem = (props) => {
 
@@ -8,10 +10,12 @@ const ListItem = (props) => {
 
 
     const {details} = props
-    const {id, name} = details
+    const {id, name, path} = details
     return (
         <>
+        <Link to={`${path}`}>
         <button className={`${buttonStatus}`} onClick={() => setIsClicked(current => !current)}>{name}</button>
+        </Link>
         </>
 
     )
