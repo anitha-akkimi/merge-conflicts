@@ -13,7 +13,7 @@ const ListItem = (props) => {
     const {id, name, path} = details
     return (
         <>
-        <Link to={`${path}`}>
+        <Link to={path}>
         <button className={`${buttonStatus}`} onClick={() => setIsClicked(current => !current)}>{name}</button>
         </Link>
         </>

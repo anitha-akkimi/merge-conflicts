@@ -8,15 +8,14 @@ import './App.css';
 function App() {
   return (
     <>
-    <BrowserRouter>
-    <Header/>
-       
+      <BrowserRouter>
+        <Header/>  
         <Routes>
-        <Route path='/' component={MyDashBoard}/>
-        <Route exact path='/projects' component={MyProject}/> 
+        <Route path='/' element={<MyDashBoard/>}/>
+        <Route exact path='/projects' element={<MyProject/>}/> 
         </Routes>
-        
-      </BrowserRouter>
+        </BrowserRouter>
+    
     </>
     
   );
